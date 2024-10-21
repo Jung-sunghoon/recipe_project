@@ -153,7 +153,7 @@ h4 em::before {
 
 .cookingInfo div p {
 	font-size: 40px;
-	padding: 30px 150px;
+	padding: 30px 100px;
 }
 
 /* 레시피 쿠킹 정보 스타일 끝 */
@@ -402,6 +402,10 @@ textarea::-webkit-scrollbar-thumb {
 	border-radius: 10px;
 	width: 90px;
 	height: 200px;
+}
+
+.commentBtn:hover {
+	opacity: 80%;
 }
 /* 댓글 스타일 끝 */
 

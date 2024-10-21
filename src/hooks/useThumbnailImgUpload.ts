@@ -13,7 +13,6 @@ const useThumbnailImgUpload = () => {
 			await uploadBytes(storageRef, file); // 이미지 업로드
 			const url = await getDownloadURL(storageRef); // 업로드된 파일의 다운로드 URL 가져오기
 			setImageUrl(url); // URL 상태 업데이트
-			console.log(url);
 		} catch (error) {
 			console.error('Error uploading image: ', error);
 		}

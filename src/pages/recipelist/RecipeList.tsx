@@ -94,7 +94,6 @@ const RecipeList = () => {
 
 			// 검색 결과가 없을 때의 처리
 			if (filteredRecipes.length === 0) {
-				console.log('검색 결과가 없습니다.');
 			}
 		} catch (error) {
 			console.error('Error fetching recipes:', error);

@@ -19,7 +19,6 @@ const useAddRecipe = () => {
 				hearts: recipeData.hearts || 0, // 기본값으로 0 설정
 				recipe_create_time: Timestamp.now(),
 			});
-			console.log('Document written with ID: ', docRef.id);
 			return docRef.id;
 		} catch (error) {
 			console.error('Error adding document: ', error);
@@ -36,7 +35,6 @@ const useAddRecipe = () => {
 				views: recipeData.views, // 기존 views 값 유지
 				hearts: recipeData.hearts, // 기존 hearts 값 유지
 			});
-			console.log('Document updated with ID: ', id);
 		} catch (error) {
 			console.error('Error updating document: ', error);
 			throw error;
@@ -51,7 +49,6 @@ const useAddRecipe = () => {
 			if (recipeSnap.exists()) {
 				return { id: recipeSnap.id, ...recipeSnap.data() } as Recipe;
 			} else {
-				console.log('No such document!');
 				return null;
 			}
 		} catch (error) {

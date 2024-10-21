@@ -56,7 +56,7 @@ const LikeButton = ({ recipeId }: { recipeId: string }) => {
 	}, [user, recipeId]);
 
 	const toggleLike = async () => {
-		if (!user) {
+		if (user.user === null) {
 			alert('로그인이 필요합니다.');
 			return;
 		}

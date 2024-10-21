@@ -25,7 +25,6 @@ const Login = () => {
 
 		try {
 			await login(email, password);
-			console.log('로그인 성공');
 			navigate('/');
 		} catch (error: any) {
 			console.error('로그인 실패:', error.message);
@@ -36,7 +35,6 @@ const Login = () => {
 	const handleGoogleLogin = async () => {
 		try {
 			await googleLogin();
-			console.log('구글 로그인 성공');
 			navigate('/');
 		} catch (error: any) {
 			console.error('구글 로그인 실패:', error.message);

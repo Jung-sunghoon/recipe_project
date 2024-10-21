@@ -91,6 +91,7 @@ const AddAndEdit = () => {
 		event.preventDefault(); // 기본 제출 방지
 
 		if (
+			user &&
 			recipeName &&
 			recipeDesc &&
 			cookingTimeHour &&
@@ -105,6 +106,7 @@ const AddAndEdit = () => {
 			const recipeData = {
 				author: {
 					user_nickname: nickname ? nickname : user?.displayName, // 예시 이메일
+					user_uid: user.uid,
 				}, // 적절한 author 데이터 설정
 				hearts: hearts, // 예시값
 				recipe_difficulty: parseInt(difficulty.replace(/\D/g, ''), 10),

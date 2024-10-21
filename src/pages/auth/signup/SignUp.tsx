@@ -136,7 +136,6 @@ export default function SignUp() {
 				provider: 'normal',
 			});
 
-			console.log('회원가입 성공:', userCreate.user);
 			alert('회원가입이 되었습니다.');
 
 			navigate('/login');

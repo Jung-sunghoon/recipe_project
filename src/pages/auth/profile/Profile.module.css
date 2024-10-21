@@ -91,9 +91,20 @@
 	gap: 30px;
 	margin-top: 15px;
 }
+
+.userPost,
+.userClass {
+	display: flex;
+	flex-direction: column;
+	width: 80px;
+}
+
 .userPost img {
 	margin-bottom: 10px;
+	width: 42px;
+	height: 49px;
 }
+
 .userPost span {
 	font-size: 18px;
 }
@@ -112,6 +123,7 @@
 .userClass img {
 	margin-bottom: 8.5px;
 	cursor: pointer;
+	width: 50px;
 }
 .userClass span {
 	font-size: 18px;
@@ -221,8 +233,9 @@
 	border-radius: 10px;
 	padding-left: 1.25rem;
 }
-.editInputEmail {
+.editReadOnly {
 	background-color: #eeeeee;
+	cursor: not-allowed;
 }
 
 .editBtn button {

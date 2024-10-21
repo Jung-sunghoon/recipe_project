@@ -84,7 +84,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
 		setLoading(true);
 		try {
 			await signInWithEmailAndPassword(auth, email, password);
-			console.log(email);
 		} catch (error) {
 			console.error('로그인 실패:', error);
 			throw error; // 로그인 컴포넌트에서 처리할 수 있도록 예외를 던짐
@@ -173,7 +172,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
 			const userDoc = await getDoc(userDocRef);
 
 			if (userDoc.exists()) {
-				console.log('유저 정보:', userDoc.data());
 				return userDoc.data().user_nickname;
 			} else {
 				throw new Error('일치하는 유저가 없습니다.');

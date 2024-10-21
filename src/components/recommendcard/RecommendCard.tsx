@@ -34,9 +34,7 @@ const RecommendCard = () => {
 		const fetchTopRecipes = async () => {
 			setLoading(true); // 데이터를 불러오기 시작할 때 로딩 상태를 true로 설정
 			try {
-				console.log('Fetching top recipes...');
 				const recipes = await getTopHeartsRecipes();
-				console.log('Recipes fetched:', recipes);
 				setTopRecipes(recipes);
 			} catch (error) {
 				console.error('Error fetching recipes:', error);

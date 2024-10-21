@@ -163,6 +163,7 @@ const Comments: React.FC<CommentsProps> = ({
 						cursor: users.user === null ? 'not-allowed' : 'pointer',
 					}}
 					onClick={addComment}
+					className={styled.commentBtn}
 				>
 					등록
 				</button>

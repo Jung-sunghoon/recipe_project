@@ -1,67 +1,70 @@
-.container{
-    font-family: 'SUIT Variable', sans-serif;
-    position: fixed; 
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    display: flex;
-    align-items: center; 
-    justify-content: center; 
-    z-index: 1000; 
-    background-color: #1E1E1E;
+.container {
+	font-family: 'SUIT Variable', sans-serif;
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 1000;
+	background-color: #1e1e1e;
 }
 
-.modalContent{
-    background-color: #FFFFFF;
-    border-radius: 10px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    width: 960px;
-    height: 420px;
+.modalContent {
+	background-color: #ffffff;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 960px;
+	height: 420px;
 }
 
 .header {
-    display: flex; 
-    align-items: center; 
-    justify-content: center; 
-    width: 100%; 
-    margin-bottom: 17px;
-    position: relative; 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	width: 100%;
+	margin-bottom: 17px;
+	position: relative;
 }
 
 .logo {
-    position: absolute; 
-    left: 50%; 
-    transform: translateX(-50%); 
+	font-family: 'Ainmom';
+	color: var(--main-color);
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
 }
 .closeButton {
-    cursor: pointer; 
-    margin-left: auto; 
-    margin-right: 20px; 
+	cursor: pointer;
+	margin-left: auto;
+	margin-right: 20px;
 }
 
-.title{
-    margin-bottom: 50px;
-    font-size: 22px;
+.title {
+	margin-bottom: 50px;
+	font-size: 22px;
 }
 
-.spoonBox{
-    gap: 10px;
-    display: flex;
+.spoonBox {
+	gap: 10px;
+	display: flex;
 }
-.spoon1 img{
-    margin-bottom: 20px;
-    width: 110px;
-    height: 110px;
+.spoon1 img {
+	margin-bottom: 20px;
+	width: 110px;
+	height: 110px;
 }
-.spoon1 h3{
-    margin-bottom: 20px;
-    font-size: 16px;
+.spoon1 h3 {
+	margin-bottom: 20px;
+	font-size: 16px;
 }
-.spoon1 span, .spoon1 p{
-    font-size: 16px;
-    color: rgba(0, 0, 0, 0.5);
+.spoon1 span,
+.spoon1 p {
+	font-size: 16px;
+	color: rgba(0, 0, 0, 0.5);
 }
