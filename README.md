@@ -8,6 +8,8 @@
 
 </div>
 
+<a href="https://recipeproject-theta.vercel.app/" target="_blank">배포 링크</a>
+
 ## 목차
 
 [![📌 프로젝트 소개](https://img.shields.io/badge/📌_프로젝트_소개-c9532f)](#-프로젝트-소개)
