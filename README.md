@@ -33,7 +33,6 @@
 - 팀 Repo : [레시피연구소🧪](https://github.com/Jung-sunghoon/recipe_project)
 - 배포 주소 : [레시피연구소🧪](https://recipeproject-theta.vercel.app/)
 - 테스트 ID
-<li>
   <ul>
 	<li>
 		ID - main@recipelab.com
@@ -42,7 +41,6 @@
 		PW - main1234
 	</li>
   </ul>
-</li>
 
 ## 🎯 주요 기능
 
